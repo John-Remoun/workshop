@@ -1,3 +1,4 @@
+const e = require("express");
 const express = require("express");
 const mysql2 = require("mysql2");
 const port = 3000;
@@ -14,7 +15,7 @@ const db = mysql2.createConnection({
 });
 db.connect((error) => {
   if (error) {
-    console.log("it is error on connection 🤦‍♂️");
+    console.log({message:"it is error on connection 🙄", error});
   } else {
     console.log("connected baby😉");
   }
