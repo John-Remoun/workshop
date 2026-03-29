@@ -1,0 +1,5 @@
+import {UserModel} from '../../DB/model/index.js'
+export const profile   = (id)=>{
+    const user = UserModel.findById(id)
+    return user
+}
